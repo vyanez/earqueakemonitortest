@@ -7,11 +7,15 @@
 //
 
 import UIKit
+import MapKit
 
 class DetailsViewController: UIViewController, USGSApiConnectionDelegate {
-
-    var urlDetails : String?
+    
+    @IBOutlet var mMap: GMSMapView!
+    @IBOutlet var lblMagnitude: UILabel!
+    @IBOutlet var lblDateAndTime: UILabel!
     var mFeature : Feature?
+    @IBOutlet var lblLocation: UILabel!
     
     private var mDetailsConnection : (USGSApiConnection, USGSApiUrlRequest)?
     
@@ -30,14 +34,36 @@ class DetailsViewController: UIViewController, USGSApiConnectionDelegate {
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     // MARK: - USGSApiDelegate
     func requestCompleted(connection: USGSApiConnection, response: USGSApiUrlResponse) {
         UIApplication.sharedApplication().networkActivityIndicatorVisible = false
+        let feature : Feature? = Feature.fromJSON(response.result)
+
+        dispatch_async(dispatch_get_main_queue(),{
+            self.lblMagnitude.text = feature?.properties.mag.description
+            self.lblDateAndTime.text = feature?.properties.time.description
+            
+            let _lat = (feature?.geometry.coordinates[1])!
+            let _lng = (feature?.geometry.coordinates[0])!
+            
+            var camera = GMSCameraPosition.cameraWithLatitude(_lat,
+                longitude:_lng, zoom:5)
+            
+            var marker = GMSMarker()
+            marker.position = CLLocationCoordinate2DMake(_lat, _lng)
+            marker.appearAnimation = kGMSMarkerAnimationPop
+            marker.title = feature?.properties.title
+            marker.snippet = feature?.properties.mag.description
+            self.mMap.camera = camera
+            marker.map = self.mMap
+
+            
+        })
         #if DEBUG
-            println("\n--- Details Response ---\n\(response)")
+            //println("\n--- Details Response ---\n\(response.result)")
+            println("\n--- Details Geometry ---\n\(feature?.geometry.coordinates[0]);\(feature?.geometry.coordinates[1])")
         #endif
     }
     

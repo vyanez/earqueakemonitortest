@@ -48,22 +48,6 @@ class USGSApiUrlResponse: NSHTTPURLResponse {
         }
         return NSString(data: self.data!, encoding: NSUTF8StringEncoding)!
     }
-    
-    
-    /*
-    var generatedToken: RondaApiToken? {
-        get {
-            var f = NSDateFormatter()
-            if self.result == nil { return nil }
-            if let t = self.result?.objectForKey("token") as? NSDictionary {
-                return RondaApiToken(
-                    expiresAt: f.dateFromString(t.objectForKey("expires_at") as String),
-                    token: t.objectForKey("access_token") as? String
-                )
-            }
-            return nil
-        }
-    }*/
 }
 
 class USGSApiUrlRequest: NSMutableURLRequest {

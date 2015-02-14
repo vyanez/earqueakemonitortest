@@ -78,11 +78,11 @@ class Feature: NSObject {
 class Properties: NSObject {
     var mag, time, updated, tsunami, sig, nst, dmin, rms, gap : Double!
     var place, url, detail, status, code, ids, sources, types, magType, type, title : String?
-    var felt, cdi, mmi, alert : AnyObject?
+    var felt, cdi, mmi, alert, products : AnyObject?
     
     override init() {}
     
-    init(mag : Double, time : Double, updated : Double, tsunami : Double, sig : Double, nst : Double, dmin : Double, rms : Double, gap : Double, place : String?, url : String?, detail : String?, felt : AnyObject?, cdi : AnyObject?, mmi : AnyObject?, alert : AnyObject?, status : String?, code : String?, ids : String?, sources : String?, types : String?, magType : String?, type : String?, title : String? ) {
+    init(mag : Double, time : Double, updated : Double, tsunami : Double, sig : Double, nst : Double, dmin : Double, rms : Double, gap : Double, place : String?, url : String?, detail : String?, felt : AnyObject?, cdi : AnyObject?, mmi : AnyObject?, alert : AnyObject?, status : String?, code : String?, ids : String?, sources : String?, types : String?, magType : String?, type : String?, title : String?, products : AnyObject? ) {
         
         self.mag = mag; self.time = time; self.updated = updated;
         self.tsunami = tsunami; self.sig = sig; self.nst = nst;
@@ -92,6 +92,7 @@ class Properties: NSObject {
         self.alert = alert; self.status = status; self.code = code;
         self.ids = ids; self.sources = sources; self.types = types;
         self.magType = magType; self.type = type; self.title = title;
+        self.products = products;
     }
     
     class func fromJSON(dic : AnyObject?) -> Properties? {
@@ -108,7 +109,18 @@ class Properties: NSObject {
         let _gap : Double = dic?.valueForKey("gap") as? Double ?? 0.0
         let _place : String = dic?.valueForKey("place") as String
         let _url : String = dic?.valueForKey("url") as String
-        let _detail : String = dic?.valueForKey("detail") as String
+        
+        var _detail : String?
+        
+        if let _detailJSON : String = dic?.valueForKey("detail") as? String {
+            _detail = _detailJSON
+        }
+        
+        var _products : AnyObject?
+        
+        if let _productsJSON : AnyObject? = dic?.valueForKey("products") {
+            _products = _productsJSON
+        }
         
         let _felt : AnyObject? = dic?.valueForKey("felt")
         let _cdi : AnyObject? = dic?.valueForKey("cdi")
@@ -124,7 +136,7 @@ class Properties: NSObject {
         let _type : String = dic?.valueForKey("type") as String
         let _title : String = dic?.valueForKey("title") as String
         
-        return Properties(mag: _mag, time: _time, updated: _updated, tsunami: _tsunami, sig: _sig, nst: _nst, dmin: _dmin, rms: _rms, gap: _gap, place: _place, url: _url, detail: _detail, felt: _felt, cdi: _cdi, mmi: _mmi, alert: _alert, status: _status, code: _code, ids: _ids, sources: _sources, types: _types, magType: _magType, type: _type, title: _title)
+        return Properties(mag: _mag, time: _time, updated: _updated, tsunami: _tsunami, sig: _sig, nst: _nst, dmin: _dmin, rms: _rms, gap: _gap, place: _place, url: _url, detail: _detail, felt: _felt, cdi: _cdi, mmi: _mmi, alert: _alert, status: _status, code: _code, ids: _ids, sources: _sources, types: _types, magType: _magType, type: _type, title: _title, products : _products)
     }
 }
 

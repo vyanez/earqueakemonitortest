@@ -89,7 +89,7 @@ class SummaryTableViewController: UITableViewController, USGSApiConnectionDelega
         }
         
         #if DEBUG
-            println("\n--- Summary Response ---\n\(response.result)")
+            //println("\n--- Summary Response ---\n\(response.result)")
         #endif
     }
     

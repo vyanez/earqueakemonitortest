@@ -7,6 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E29D9E21A8FA71C0079E509 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E29D9E01A8FA6900079E509 /* SystemConfiguration.framework */; };
+		6E29D9E31A8FA71C0079E509 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E29D9DE1A8FA6840079E509 /* QuartzCore.framework */; };
+		6E29D9E41A8FA71C0079E509 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E29D9DC1A8FA67E0079E509 /* OpenGLES.framework */; };
+		6E29D9E51A8FA71C0079E509 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E29D9DA1A8FA66C0079E509 /* libz.dylib */; };
+		6E29D9E61A8FA71C0079E509 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E29D9D81A8FA6550079E509 /* libicucore.dylib */; };
+		6E29D9E71A8FA71C0079E509 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E29D9D61A8FA6460079E509 /* libc++.dylib */; };
+		6E29D9E81A8FA71C0079E509 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E29D9D41A8FA6340079E509 /* ImageIO.framework */; };
+		6E29D9E91A8FA71C0079E509 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E29D9D21A8FA62D0079E509 /* GLKit.framework */; };
+		6E29D9EA1A8FA71C0079E509 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E29D9D01A8FA6270079E509 /* CoreText.framework */; };
+		6E29D9EB1A8FA71C0079E509 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E29D9CE1A8FA61F0079E509 /* CoreLocation.framework */; };
+		6E29D9EC1A8FA71C0079E509 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E29D9CC1A8FA61A0079E509 /* CoreData.framework */; };
+		6E29D9ED1A8FA71C0079E509 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E29D9CA1A8FA6110079E509 /* CoreFoundation.framework */; };
+		6E29D9EE1A8FA71C0079E509 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E29D9C81A8FA60A0079E509 /* AVFoundation.framework */; };
+		6E29D9EF1A8FA71C0079E509 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E650FC01A8EBDF000964126 /* MapKit.framework */; };
+		6E29D9F61A8FB0CD0079E509 /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E29D9F51A8FB0CD0079E509 /* GoogleMaps.framework */; };
+		6E29D9F81A8FB0E40079E509 /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6E29D9F71A8FB0E40079E509 /* GoogleMaps.bundle */; };
 		6E650F871A8E567500964126 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E650F861A8E567500964126 /* AppDelegate.swift */; };
 		6E650F8A1A8E567500964126 /* Earthquake_Monitor.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6E650F881A8E567500964126 /* Earthquake_Monitor.xcdatamodeld */; };
 		6E650FA01A8E567500964126 /* Earthquake_MonitorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E650F9F1A8E567500964126 /* Earthquake_MonitorTests.swift */; };
@@ -18,7 +34,6 @@
 		6E650FBA1A8E751700964126 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E650FB91A8E751700964126 /* UIColorExtension.swift */; };
 		6E650FBC1A8E7FA700964126 /* UINavigationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E650FBB1A8E7FA700964126 /* UINavigationExtension.swift */; };
 		6E650FBE1A8EA43200964126 /* Feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E650FBD1A8EA43200964126 /* Feature.swift */; };
-		6E650FC21A8EBDFA00964126 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E650FC01A8EBDF000964126 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +47,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6E29D9C81A8FA60A0079E509 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		6E29D9CA1A8FA6110079E509 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		6E29D9CC1A8FA61A0079E509 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		6E29D9CE1A8FA61F0079E509 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		6E29D9D01A8FA6270079E509 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		6E29D9D21A8FA62D0079E509 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		6E29D9D41A8FA6340079E509 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		6E29D9D61A8FA6460079E509 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		6E29D9D81A8FA6550079E509 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		6E29D9DA1A8FA66C0079E509 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		6E29D9DC1A8FA67E0079E509 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		6E29D9DE1A8FA6840079E509 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		6E29D9E01A8FA6900079E509 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		6E29D9F51A8FB0CD0079E509 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMaps.framework; sourceTree = "<group>"; };
+		6E29D9F71A8FB0E40079E509 /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
+		6E29D9FA1A8FB20F0079E509 /* Earthquake Monitor-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Earthquake Monitor-Bridging-Header.h"; sourceTree = "<group>"; };
 		6E650F811A8E567500964126 /* Earthquake Monitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Earthquake Monitor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E650F851A8E567500964126 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E650F861A8E567500964126 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -55,7 +86,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E650FC21A8EBDFA00964126 /* MapKit.framework in Frameworks */,
+				6E29D9E21A8FA71C0079E509 /* SystemConfiguration.framework in Frameworks */,
+				6E29D9E31A8FA71C0079E509 /* QuartzCore.framework in Frameworks */,
+				6E29D9E41A8FA71C0079E509 /* OpenGLES.framework in Frameworks */,
+				6E29D9F61A8FB0CD0079E509 /* GoogleMaps.framework in Frameworks */,
+				6E29D9E51A8FA71C0079E509 /* libz.dylib in Frameworks */,
+				6E29D9E61A8FA71C0079E509 /* libicucore.dylib in Frameworks */,
+				6E29D9E71A8FA71C0079E509 /* libc++.dylib in Frameworks */,
+				6E29D9E81A8FA71C0079E509 /* ImageIO.framework in Frameworks */,
+				6E29D9E91A8FA71C0079E509 /* GLKit.framework in Frameworks */,
+				6E29D9EA1A8FA71C0079E509 /* CoreText.framework in Frameworks */,
+				6E29D9EB1A8FA71C0079E509 /* CoreLocation.framework in Frameworks */,
+				6E29D9EC1A8FA71C0079E509 /* CoreData.framework in Frameworks */,
+				6E29D9ED1A8FA71C0079E509 /* CoreFoundation.framework in Frameworks */,
+				6E29D9EE1A8FA71C0079E509 /* AVFoundation.framework in Frameworks */,
+				6E29D9EF1A8FA71C0079E509 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +145,7 @@
 				6E650F861A8E567500964126 /* AppDelegate.swift */,
 				6E650F881A8E567500964126 /* Earthquake_Monitor.xcdatamodeld */,
 				6E650F841A8E567500964126 /* Supporting Files */,
+				6E29D9FA1A8FB20F0079E509 /* Earthquake Monitor-Bridging-Header.h */,
 			);
 			path = "Earthquake Monitor";
 			sourceTree = "<group>";
@@ -132,6 +178,7 @@
 		6E650FA91A8E569A00964126 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				6E29D9F71A8FB0E40079E509 /* GoogleMaps.bundle */,
 				6E650FAD1A8E591F00964126 /* Media.xcassets */,
 			);
 			name = Resources;
@@ -182,6 +229,20 @@
 		6E650FBF1A8EBDE200964126 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6E29D9F51A8FB0CD0079E509 /* GoogleMaps.framework */,
+				6E29D9E01A8FA6900079E509 /* SystemConfiguration.framework */,
+				6E29D9DE1A8FA6840079E509 /* QuartzCore.framework */,
+				6E29D9DC1A8FA67E0079E509 /* OpenGLES.framework */,
+				6E29D9DA1A8FA66C0079E509 /* libz.dylib */,
+				6E29D9D81A8FA6550079E509 /* libicucore.dylib */,
+				6E29D9D61A8FA6460079E509 /* libc++.dylib */,
+				6E29D9D41A8FA6340079E509 /* ImageIO.framework */,
+				6E29D9D21A8FA62D0079E509 /* GLKit.framework */,
+				6E29D9D01A8FA6270079E509 /* CoreText.framework */,
+				6E29D9CE1A8FA61F0079E509 /* CoreLocation.framework */,
+				6E29D9CC1A8FA61A0079E509 /* CoreData.framework */,
+				6E29D9CA1A8FA6110079E509 /* CoreFoundation.framework */,
+				6E29D9C81A8FA60A0079E509 /* AVFoundation.framework */,
 				6E650FC01A8EBDF000964126 /* MapKit.framework */,
 			);
 			name = Frameworks;
@@ -267,6 +328,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E29D9F81A8FB0E40079E509 /* GoogleMaps.bundle in Resources */,
 				6E650FAE1A8E591F00964126 /* Media.xcassets in Resources */,
 				6E650FAC1A8E56E600964126 /* App.storyboard in Resources */,
 			);
@@ -355,6 +417,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_SWIFT_FLAGS = "-D DEBUG";
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -391,6 +454,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_SWIFT_FLAGS = "-D DEBUG";
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -400,10 +464,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Earthquake",
+					Monitor,
+				);
 				INFOPLIST_FILE = "Earthquake Monitor/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = " -ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Earthquake Monitor/Earthquake Monitor-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -413,11 +486,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Earthquake",
+					Monitor,
+				);
 				GCC_PREPROCESSOR_DEFINITIONS = "";
 				INFOPLIST_FILE = "Earthquake Monitor/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = " -ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Earthquake Monitor/Earthquake Monitor-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

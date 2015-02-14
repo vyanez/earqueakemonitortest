@@ -22,6 +22,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().tintColor = UIColor.whiteColor()
         UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName:UIColor.whiteColor()]
         
+        //For Google Maps
+        GMSServices.provideAPIKey("AIzaSyB2x_zuQxoyuFvFVM9JGCoupbuR4J72X6s")
+        
         return true
     }
 
